@@ -1,6 +1,5 @@
 /* config.h.  Generated from config.h.in by configure.  */
 /* config.h.in.  Generated from configure.ac by autoheader.  */
-/* saintlou: File is identical with PPC and Intel, 10/26/2010 */
 
 /* Default visibility */
 #define API_EXPORTED __attribute__((visibility("default")))
@@ -18,7 +17,7 @@
 #define HAVE_INTTYPES_H 1
 
 /* Define to 1 if you have the `rt' library (-lrt). */
-/* #undef HAVE_LIBRT */
+#define HAVE_LIBRT 1
 
 /* Define to 1 if you have the <memory.h> header file. */
 #define HAVE_MEMORY_H 1
@@ -52,10 +51,10 @@
 /* #undef NO_MINUS_C_MINUS_O */
 
 /* Darwin backend */
-#define OS_DARWIN /**/
+/* #undef OS_DARWIN */
 
 /* Linux backend */
-/* #undef OS_LINUX */
+#define OS_LINUX /**/
 
 /* Name of package */
 #define PACKAGE "libusb"
